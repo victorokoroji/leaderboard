@@ -15,7 +15,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Live Demo
 
-[Live Demo Link](https://github.com/vickymarz/leaderboard)
+[Live Demo Link](https://github.com/vickymarz/leaderboard/dist)
 
 ## Getting Started
 
