@@ -4,7 +4,7 @@
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score
 
 
-![screenshot]()
+![screenshot](./desktop-screenshot.png)
 
 ## Built With
 
