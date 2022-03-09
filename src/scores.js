@@ -1,4 +1,3 @@
-
 const scores = `
   <li>Name 100</li>
   <li>Name 20</li>
@@ -7,10 +6,10 @@ const scores = `
   <li>Name 125</li>
   <li>Name 77</li>
   <li>Name 42</li>
-`
+`;
 
 const leaderBoard = () => {
-  document.querySelector('.leaderboard').innerHTML = scores
-}
+  document.querySelector('.leaderboard').innerHTML = scores;
+};
 
-export default leaderBoard
+export default leaderBoard;
