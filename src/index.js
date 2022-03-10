@@ -15,6 +15,7 @@ form.addEventListener('submit', async e => {
 
  await postData(userData)
   refreshData()
+	form.reset()
 })
 
 refreshBtn.addEventListener('click', refreshData)
