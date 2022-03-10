@@ -26,6 +26,6 @@ export const getData = async () => {
 		const result = await datas.result
 		return result
 	} catch (err) {
-		return e
+		return err
 	}
 }
