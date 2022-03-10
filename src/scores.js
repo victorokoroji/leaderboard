@@ -1,15 +1,17 @@
-const scores = `
-  <li>Name 100</li>
-  <li>Name 20</li>
-  <li>Name 50</li>
-  <li>Name 78</li>
-  <li>Name 125</li>
-  <li>Name 77</li>
-  <li>Name 42</li>
-`;
+import { getData } from './services.js';
 
-const leaderBoard = () => {
-  document.querySelector('.leaderboard').innerHTML = scores;
+const renderScore = async (scores) => {
+  scores.forEach(({ user, score }) => {
+    document.querySelector('.leaderboard').innerHTML += `
+   <li>${user}  ${score}</li>
+   `;
+  });
 };
 
-export default leaderBoard;
+const refreshData = async () => {
+  const userDatas = await getData();
+  userDatas.sort((playerOne, playerTwo) => playerTwo.score - playerOne.score);
+  renderScore(userDatas);
+};
+
+export default refreshData;
