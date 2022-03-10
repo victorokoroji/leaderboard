@@ -14,4 +14,4 @@ const refreshData = async () => {
   renderScore(userDatas);
 };
 
-export default refreshData
+export default refreshData;
