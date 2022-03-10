@@ -13,7 +13,8 @@ export const postData = async data => {
 	try {
 		const response = await fetch(`${baseURL}/${gameId}/scores/`, config)
 		const datas = await response.json()
-		return datas
+		const result = await datas.result
+		return result
 	} catch (err) {
 		return err
 	}
