@@ -7,7 +7,7 @@ const renderScore = async (scores) => {
      <h3> ${user} </h3>
      <span> <i class="fas fa-star"></i> ${score} </span>
      </li>
-   `
+   `;
   });
 };
 

@@ -14,7 +14,7 @@
   --sky-blue: #35bcef;
   --dark-blue: #040508;
   --blue: #283e7c;
-  --gold: #Fded34;
+  --gold: #fded34;
   --navy-blue: #2a3f7d;
   --light-blue: #0261ff;
 }
@@ -77,6 +77,8 @@ button {
   box-shadow: 2px 2px 2px rgba(243, 241, 241, 0.2);
   outline: none;
   border-radius: 10px;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .leaderboard {
@@ -122,14 +124,8 @@ button {
   border-color: var(--gold);
 }
 
-button {
-    background-color: var(--blue);
-    color: var(--white);
-}
-
 .button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
