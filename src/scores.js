@@ -3,7 +3,10 @@ import { getData } from './services.js';
 const renderScore = async (scores) => {
   scores.forEach(({ user, score }) => {
     document.querySelector('.leaderboard').innerHTML += `
-   <li>${user}  ${score}</li>
+   <li>
+     <h3> ${user} </h3>
+     <span> <i class="fas fa-star"></i> ${score} </span>
+     </li>
    `;
   });
 };
